@@ -1,0 +1,194 @@
+body {
+    font-family: 'Serif', serif; /* Natural, serif font */
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0; /* Light beige background */
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column; /* Stack sections vertically for full-page layout */
+  }
+  
+  header {
+    background-color: #b3886b; /* Earthy brown background */
+    color: #fff; /* White text */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* Align logo and navigation */
+    align-items: center;
+  }
+  
+  .logo {
+    flex: 1; /* Take up remaining space after navigation */
+  }
+  
+  .logo h1 {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px; /* Subtle letter spacing */
+  }
+  
+  .logo p {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+  nav {
+    flex: 2; /* Adjust space for navigation links */
+    display: flex;
+    justify-content: flex-end; /* Align links to the right */
+  }
+  
+  .nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-menu li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+  }
+  
+  .nav-menu a:hover {
+    color: #f0c89a; /* Warm yellow hover color */
+  }
+  
+  main {
+    flex: 1; /* Take up remaining space after header */
+    padding: 50px 0; /* Top and bottom padding */
+  }
+  
+  section {
+    margin-bottom: 100px; /* Spacing between sections */
+    text-align: center;
+  }
+  
+  section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  section p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  /* Responsive Images (using max-width and width) */
+  section img {
+    max-width: 100%; /* Ensures images don't overflow containers */
+    width: 600px; /* Adjust width as needed for different sections */
+    display: block;
+    margin: 0 auto; /* Center images horizontally */
+    border-radius: 5px; /* Subtle rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional subtle shadow */
+  }
+  
+  .services-container,
+  .rooms-container {
+    display: flex;
+    justify-content: space-around; /* Distribute items evenly */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  }
+  
+  .service-item,
+  .room-item {
+    width: 30%; /* Adjust width as needed */
+    margin: 15px;
+    padding: 20px;
+    background-color: #fff; /* Light background for content */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .service-item img,
+  .room-item img {
+    margin-bottom: 10px;
+  }
+  
+  .service-item:hover,
+  .room-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+  }
+  
+  .btn {
+    background-color: #b3886b; /* Earthy brown button color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color
+  }
+
+  .btn:hover {
+    background-color: #f0c89a; /* Warm yellow hover color */
+  }
+  
+  #contact form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  #contact label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  #contact input,
+  #contact textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  #contact textarea {
+    resize: vertical; /* Allow resizing textarea height */
+  }
+  
+  #contact button {
+    background-color: #b3886b; /* Earthy brown button color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #contact button:hover {
+    background-color: #f0c89a; /* Warm yellow hover color */
+  }
+  
+  /* Optional futuristic elements (customize as needed) */
+  .hero-content {
+    position: relative; /* Enable layering for futuristic text effect */
+  }
+  
+  .hero-content h2 {
+    color: #fff; /* White text for hero section */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Inner shadow for depth */
+    animation: glow 2s ease-in-out infinite alternate; /* Add a subtle glow animation */
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+    to {
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    }
+  }
+  

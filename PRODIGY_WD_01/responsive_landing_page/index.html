@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ancient Oasis Hotel</title>
+  <link rel="icon" href="./images/a_hotel_logo.png" type="./image/png">
+
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <h1>Ancient Oasis Hotel</h1>
+      <p>Experience the Serenity of the Past</p>
+    </div>
+    <nav id="nav-menu">
+      <ul class="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#rooms">Rooms</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+    <button id="voice-control" aria-label="Activate voice control"></button>
+  </header>
+
+  <main>
+
+    <section id="home">
+      <img src="./images/hero.jpg" alt="Hotel Exterior">
+      <div class="home-content">
+        <h2>Welcome to a Timeless Escape</h2>
+        <p>Immerse yourself in the rich history and tranquility of our ancient-inspired hotel. 
+          Unwind in luxurious accommodations and rediscover the simple pleasures of life.</p>
+        <a href="#explore" class="btn">Explore Our Oasis</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>Our Story</h2>
+      <p>Built upon the grounds of a forgotten civilization, our hotel pays homage to the past 
+        while offering modern comfort. We invite you to experience the unique blend of history and 
+        luxury that awaits you.</p>
+      <img src="./images/about.jpg" alt="Hotel Lobby">
+    </section>
+
+    <section id="services">
+      <h2>Unwind & Rejuvenate</h2>
+      <div class="services-container">
+        <div class="service-item">
+          <img src="./images/spa.jpg" alt="Spa">
+          <h3>Spa Treatments</h3>
+          <p>Indulge in ancient healing techniques and emerge feeling refreshed.</p>
+        </div>
+        <div class="service-item">
+          <img src="./images/pool.jpg" alt="Swimming Pool">
+          <h3>Tranquil Pool</h3>
+          <p>Take a dip in our serene pool surrounded by lush gardens.</p>
+        </div>
+        <div class="service-item">
+          <img src="./images/restaurant.jpg" alt="Restaurant">
+          <h3>Culinary Delights</h3>
+          <p>Savor exquisite meals prepared with fresh, local ingredients.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="rooms">
+      <h2>Your Sanctuary Awaits</h2>
+      <div class="rooms-container">
+        <div class="room-item">
+          <img src="./images/room1.jpg" alt="Deluxe Room">
+          <h3>Deluxe Room</h3>
+          <p>Spacious and elegantly decorated, offering a haven of relaxation.</p>
+        </div>
+        <div class="room-item">
+          <img src="./images/room2.jpg" alt="Suite">
+          <h3>Suite</h3>
+          <p>Experience luxury with a separate living area and stunning views.</p>
+        </div>
+        <div class="room-item">
+          <img src="./images/room3.jpg" alt="Family Room">
+          <h3>Family Room</h3>
+          <p>Comfortable and spacious, perfect for families seeking a memorable stay.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Connect with Us</h2>
+      <p>Let us help you plan your unforgettable journey into the past.</p>
+      <form action="#">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <label for="message
+        <label for="message">Message:</label>
+        <textarea id="message" rows="5"></textarea>
+        <button type="submit">Send Inquiry</button>
+      </form>
+
+      <div id="weather">
+        <h2>Today's Weather: Loading...</h2>
+      </div>
+
+      <section id="recommendations">
+        <h2>Recommended Activities for You</h2>
+        <p>(This section will be dynamically populated by JavaScript based on user preferences)</p>
+      </section>
+
+      <div id="chat-container">
+        <h2>Chat with our Virtual Assistant (Coming Soon)</h2>
+        <p>(This chat functionality will be implemented in the future)</p>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
